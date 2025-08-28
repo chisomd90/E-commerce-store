@@ -1,5 +1,5 @@
 const API_URL = "https://dummyjson.com/products?limit=20";
-const SEARCH_API = 'https://dummyjson.com/products/search?q=';
+const SEARCH_API = "https://dummyjson.com/products/search?q=";
 
 const product = document.querySelector("#product");
 const form = document.querySelector("form");
@@ -34,11 +34,13 @@ function displayProducts(prod) {
     productDiv.className = " w-[300px] rounded-lg bg-[white]";
 
     productDiv.innerHTML = `
-        <img src="${thumbnail}" alt="${title}"/>
-        <div class="p-5">
-          <h1 class= "text-red-300">${title}</h1>
+        <img class="w-[full]" src="${thumbnail}" alt="${title}"/>
+        <div class="p-5 shadow-lg hover:">
+          <h1 class= "mb-3">${title}</h1>
           <p>${price}</p>
-          <p>${availabilityStatus}</p>
+          <p class="${availabilityStat(
+            availabilityStatus
+          )}">${availabilityStatus}</p>
         </div>
         `;
 
@@ -48,9 +50,9 @@ function displayProducts(prod) {
 
 function availabilityStat(status) {
   if (status === "In Stock") {
-    return "text-[green]";
+    return "text-green-600";
   } else {
-    return "red";
+    return "text-red-700";
   }
 }
 
