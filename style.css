@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "cursive";
+  /* font-family: "Poppins", sans-serif; */
+}
+
+:root {
+  --Softorange: hsl(35, 77%, 62%);
+  --Softred: hsl(5, 85%, 63%);
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayishblue: hsl(233, 8%, 79%);
+  --Darkgrayishblue: hsl(236, 13%, 42%);
+  --Verydarkblue: hsl(240, 100%, 5%);
+  --Grey: hsl(0, 0%, 40%);
+  --Gray2: hsl(0, 0%, 60%);
+  --Grey3: hsl(0, 0%, 90%)
+}
